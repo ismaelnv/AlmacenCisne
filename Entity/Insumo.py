@@ -2,13 +2,12 @@
 
 class Insumo():
     
-    def __init__(self, id_insumo,nombre,precio_insumo,stock_insumo,existencia_insumo
-    ,id_categoria,estado):
+    def __init__(self,id_insumo,nombre,precio_insumo,stock_insumo
+    ,estado,id_categoria):
         self.__id_insumo = id_insumo 
         self.__nombre = nombre
         self.__precio_insumo = precio_insumo
         self.__stock_insumo = stock_insumo
-        self.__existencia_insumo = existencia_insumo
         self.__id_categoria = id_categoria
         self.__estado = estado
         

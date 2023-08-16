@@ -1,7 +1,9 @@
+
 import mysql.connector
 from mysql.connector import Error
+from Entity.Insumo import *
 
-class Conexion():
+class Registro_datos():
     
     def __init__(self):
         try:
@@ -11,20 +13,45 @@ class Conexion():
             self.miCursor = self.conexion.cursor()
         except Error as ex: 
             print("Error al intentar conexión".format(ex))
+            
+    insumo = Insumo
+    def inserta_insumos(self,insumo):
+        sql = '''INSERT INTO insumos(idInsumos,NombreIns,PrecioIns,StockIns,EstadoIns,idCategoria)
+        VALUES('{}','{}','{}','{}','{}','{}')'''.format(insumo.getIdInsumo(),insumo.getNombre(),insumo.getPrecioInsumo(),
+        insumo.getStockInsumo(),insumo.getEstado(),insumo.getIdCategoria())
+        self.miCursor.execute(sql)
+        self.conexion.commit()
+        self.miCursor.close()
         
-    def listarInsumos(self):
-        if self.conexion.is_connected():
-            try:
-                cursor = self.conexion.cursor()
-                cursor.execute("SELECT * FROM Insumos ORDER BY nombreIns ASC")
-                resultado = cursor.fetchall()
-                return resultado
-            except Error as ex:
-                print("Error al intentar conexión".format(ex))
-    def insertarInsumos(self):
-        self.miCursor.execute("insert into insumos (NombreIns,PrecioIns,StockIns,EstadoIns,IdCategoria) values ('almoadas',28,13,'nuevo',3)")            
-        n = self.miCursor.rowcount
+    def traer_insumos(self):
+        sql = "SELECT * FROM insumos"
+        self.miCursor.execute(sql)
+        registroInsumo = self.miCursor.fetchall()
+        return registroInsumo  
+    
+    def buscar_insumos(self,nombre):
+        sql = "SELECT * FROM insumos WHERE NombreIns = '{}'".format(nombre)
+        self.miCursor.execute(sql)
+        nombreX = self.miCursor.fetchall()
+        self.miCursor.close()
+        return nombreX
+    
+    def eliminar_insumos(self,nombre):
+        sql ="DELETE FROM insumos WHERE NombreIns = '{}'".format(nombre)
+        self.miCursor.execute(sql)
+        self.conexion.commit()
+        self.miCursor.close()
         
-    insertarInsumos()
+    #def ingreso_usuario(self,usuario,contraseña):
+        #sql = "SELECT * FROM empleado WHERE idEmpleado '{}'".format(usuario)   
+        #sql1 = "SELECT * FROM empleado WHERE CorreoEmp '{}'".format(contraseña)
+        #self.miCursor.execute(sql,sql1)
+        #self.miCursor.close()
+     
+        
+            
+          
+    
     
 
+ 
