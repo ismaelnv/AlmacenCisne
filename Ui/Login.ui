@@ -111,6 +111,9 @@
     <property name="styleSheet">
      <string notr="true"/>
     </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
    </widget>
    <widget class="QCommandLinkButton" name="commandLinkButton">
     <property name="geometry">
@@ -149,7 +152,7 @@
      <string>Ingresar</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="btnSalir">
     <property name="geometry">
      <rect>
       <x>360</x>
@@ -206,7 +209,7 @@
    <zorder>txtPassword</zorder>
    <zorder>commandLinkButton</zorder>
    <zorder>btnIngresar</zorder>
-   <zorder>pushButton_2</zorder>
+   <zorder>btnSalir</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
