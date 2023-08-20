@@ -17,8 +17,8 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>30</y>
+      <x>310</x>
+      <y>20</y>
       <width>131</width>
       <height>51</height>
      </rect>
@@ -181,7 +181,7 @@
     <property name="title">
      <string>Estado</string>
     </property>
-    <widget class="QComboBox" name="comboBox">
+    <widget class="QComboBox" name="cboEstado">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -198,6 +198,11 @@
        <bold>true</bold>
       </font>
      </property>
+     <item>
+      <property name="text">
+       <string>Seleccione estado</string>
+      </property>
+     </item>
      <item>
       <property name="text">
        <string>Activo</string>
@@ -303,7 +308,7 @@ QPushButton:hover{
      <string>Borrar</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="txtIdusuario">
     <property name="geometry">
      <rect>
       <x>210</x>
@@ -321,7 +326,7 @@ QPushButton:hover{
      </font>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="txtNombre">
     <property name="geometry">
      <rect>
       <x>210</x>
@@ -339,7 +344,7 @@ QPushButton:hover{
      </font>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_3">
+   <widget class="QLineEdit" name="txtPrecio">
     <property name="geometry">
      <rect>
       <x>210</x>
@@ -357,7 +362,7 @@ QPushButton:hover{
      </font>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_4">
+   <widget class="QLineEdit" name="txtStock">
     <property name="geometry">
      <rect>
       <x>210</x>
@@ -375,7 +380,7 @@ QPushButton:hover{
      </font>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_5">
+   <widget class="QLineEdit" name="txtIdcategoria">
     <property name="geometry">
      <rect>
       <x>510</x>
@@ -393,7 +398,7 @@ QPushButton:hover{
      </font>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_6">
+   <widget class="QLineEdit" name="txtExistencia">
     <property name="geometry">
      <rect>
       <x>210</x>
@@ -551,12 +556,12 @@ QPushButton:hover{
    <zorder>btnRegistrar</zorder>
    <zorder>btnModificar</zorder>
    <zorder>btnBorrar</zorder>
-   <zorder>lineEdit</zorder>
-   <zorder>lineEdit_2</zorder>
-   <zorder>lineEdit_3</zorder>
-   <zorder>lineEdit_4</zorder>
-   <zorder>lineEdit_5</zorder>
-   <zorder>lineEdit_6</zorder>
+   <zorder>txtIdusuario</zorder>
+   <zorder>txtNombre</zorder>
+   <zorder>txtPrecio</zorder>
+   <zorder>txtStock</zorder>
+   <zorder>txtIdcategoria</zorder>
+   <zorder>txtExistencia</zorder>
    <zorder>tbDatos</zorder>
    <zorder>btnSalir</zorder>
    <zorder>btnConsultar</zorder>

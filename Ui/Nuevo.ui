@@ -47,18 +47,19 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>70</x>
       <y>160</y>
-      <width>91</width>
+      <width>121</width>
       <height>21</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Agency FB</family>
-      <pointsize>16</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
+      <family>Brush Script MT</family>
+      <pointsize>18</pointsize>
+      <weight>50</weight>
+      <italic>true</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -84,7 +85,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../Img/Colchones-Cisne.jpg</pixmap>
+     <pixmap>../Img/1366_2000.jpeg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -93,18 +94,19 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>70</x>
       <y>200</y>
-      <width>91</width>
+      <width>121</width>
       <height>21</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Agency FB</family>
-      <pointsize>16</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
+      <family>Brush Script MT</family>
+      <pointsize>18</pointsize>
+      <weight>50</weight>
+      <italic>true</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -120,18 +122,19 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>70</x>
       <y>400</y>
-      <width>91</width>
+      <width>121</width>
       <height>21</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Agency FB</family>
-      <pointsize>16</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
+      <family>Brush Script MT</family>
+      <pointsize>18</pointsize>
+      <weight>50</weight>
+      <italic>true</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -147,18 +150,19 @@
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>70</x>
       <y>360</y>
-      <width>91</width>
+      <width>121</width>
       <height>21</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Agency FB</family>
-      <pointsize>16</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
+      <family>Brush Script MT</family>
+      <pointsize>18</pointsize>
+      <weight>50</weight>
+      <italic>true</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -174,18 +178,19 @@
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>70</x>
       <y>320</y>
-      <width>91</width>
+      <width>121</width>
       <height>21</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Agency FB</family>
-      <pointsize>16</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
+      <family>Brush Script MT</family>
+      <pointsize>18</pointsize>
+      <weight>50</weight>
+      <italic>true</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -201,18 +206,19 @@
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>70</x>
       <y>280</y>
-      <width>91</width>
+      <width>151</width>
       <height>21</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Agency FB</family>
-      <pointsize>16</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
+      <family>Brush Script MT</family>
+      <pointsize>18</pointsize>
+      <weight>50</weight>
+      <italic>true</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -228,18 +234,19 @@
    <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>70</x>
       <y>240</y>
-      <width>91</width>
+      <width>161</width>
       <height>21</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Agency FB</family>
-      <pointsize>16</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
+      <family>Brush Script MT</family>
+      <pointsize>18</pointsize>
+      <weight>50</weight>
+      <italic>true</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -330,19 +337,24 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
+      <family>Brush Script MT</family>
+      <pointsize>21</pointsize>
+      <weight>50</weight>
+      <italic>true</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton {
-   background-color: rgb(138, 138, 138);
+     <string notr="true">
+QPushButton {
+   
+	background-color: rgb(87, 162, 168);
    color: rgb(255, 255, 255);
 }
 QPushButton:hover{
 	
-	background-color: rgb(216, 216, 216);
+	
+	background-color: rgb(104, 254, 253);
 	color: rgb(0, 0, 0);
 }</string>
     </property>
@@ -361,20 +373,24 @@ QPushButton:hover{
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
+      <family>Brush Script MT</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>true</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
      <string notr="true">
 QPushButton {
-   background-color: rgb(138, 138, 138);
+   
+	background-color: rgb(87, 162, 168);
    color: rgb(255, 255, 255);
 }
 QPushButton:hover{
 	
-	background-color: rgb(216, 216, 216);
+	
+	background-color: rgb(104, 254, 253);
 	color: rgb(0, 0, 0);
 }</string>
     </property>
