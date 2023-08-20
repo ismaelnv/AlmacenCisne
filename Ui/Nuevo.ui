@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="txtIdEmpleado">
     <property name="geometry">
      <rect>
       <x>230</x>
@@ -24,7 +24,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="txtNombre">
     <property name="geometry">
      <rect>
       <x>230</x>
@@ -34,7 +34,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_3">
+   <widget class="QLineEdit" name="txtApellidoPaterno">
     <property name="geometry">
      <rect>
       <x>230</x>
@@ -74,8 +74,8 @@
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>-30</x>
-      <y>-20</y>
+      <x>-40</x>
+      <y>-30</y>
       <width>551</width>
       <height>621</height>
      </rect>
@@ -203,7 +203,7 @@
      <rect>
       <x>100</x>
       <y>280</y>
-      <width>91</width>
+      <width>101</width>
       <height>21</height>
      </rect>
     </property>
@@ -230,7 +230,7 @@
      <rect>
       <x>100</x>
       <y>240</y>
-      <width>91</width>
+      <width>101</width>
       <height>21</height>
      </rect>
     </property>
@@ -252,7 +252,7 @@
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_4">
+   <widget class="QLineEdit" name="txtApellidoMaterno">
     <property name="geometry">
      <rect>
       <x>230</x>
@@ -262,7 +262,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_5">
+   <widget class="QLineEdit" name="txtDni">
     <property name="geometry">
      <rect>
       <x>230</x>
@@ -272,7 +272,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_6">
+   <widget class="QLineEdit" name="txtCorreo">
     <property name="geometry">
      <rect>
       <x>230</x>
@@ -282,7 +282,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_7">
+   <widget class="QLineEdit" name="txtIdCargo">
     <property name="geometry">
      <rect>
       <x>230</x>
@@ -383,9 +383,9 @@ QPushButton:hover{
     </property>
    </widget>
    <zorder>label_5</zorder>
-   <zorder>lineEdit</zorder>
-   <zorder>lineEdit_2</zorder>
-   <zorder>lineEdit_3</zorder>
+   <zorder>txtIdEmpleado</zorder>
+   <zorder>txtNombre</zorder>
+   <zorder>txtApellidoPaterno</zorder>
    <zorder>label_2</zorder>
    <zorder>label_3</zorder>
    <zorder>label_4</zorder>
@@ -393,10 +393,10 @@ QPushButton:hover{
    <zorder>label_7</zorder>
    <zorder>label_8</zorder>
    <zorder>label_9</zorder>
-   <zorder>lineEdit_4</zorder>
-   <zorder>lineEdit_5</zorder>
-   <zorder>lineEdit_6</zorder>
-   <zorder>lineEdit_7</zorder>
+   <zorder>txtApellidoMaterno</zorder>
+   <zorder>txtDni</zorder>
+   <zorder>txtCorreo</zorder>
+   <zorder>txtIdCargo</zorder>
    <zorder>label_10</zorder>
    <zorder>btnCerrar</zorder>
    <zorder>btnRegistrar</zorder>

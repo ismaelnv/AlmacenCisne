@@ -21,5 +21,13 @@ class EmpleadoController():
         #self.miCursor.close()
         return correox
     
+    def inserta_empleados(self,empleado):
+        sql = '''INSERT INTO empleado(idEmpleado,NombreEmp,ApellidoPaterno,ApellidoMaterno,DniEmp,CorreoEmp,idCargo)
+        VALUES('{}','{}','{}','{}','{}','{}','{}')'''.format(empleado.getIdEmpleado(),empleado.getNombre(),empleado.getApellidoPaterno(),
+        empleado.getApellidoMaterno(),empleado.getDniEmpleado(),empleado.getCorreoEmpleado(),empleado.getIdCargo())
+        self.miCursor.execute(sql)
+        self.conexion.commit()
+        self.miCursor.close()
+    
     
             
