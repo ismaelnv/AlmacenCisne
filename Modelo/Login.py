@@ -47,7 +47,7 @@ class FormularioLogin(QtWidgets.QMainWindow):
     def nuevoRegistro(self):
         vClientes= Nuevo(self)
         vClientes.show() 
-        
+                
     def cerrar_ventana(self):
         self.close() 
         
