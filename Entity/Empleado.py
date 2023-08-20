@@ -2,7 +2,7 @@
 class Empleado():
     
     def __init__(self,id_empleado,nombre,apellido_paterno,apellido_materno,
-    dni_empleado,correo_empleado,id_cargo,estado):
+    dni_empleado,correo_empleado,id_cargo):
         self.__id_empleado = id_empleado
         self.__nombre = nombre
         self.__apellido_paterno = apellido_paterno
@@ -10,7 +10,7 @@ class Empleado():
         self.__dni_empleado = dni_empleado
         self.__correo_empleado = correo_empleado
         self.__id_cargo = id_cargo
-        self.__estado = estado
+        #self.__estado = estado
         
     def getIdEmpleado(self):
         return self.__id_empleado

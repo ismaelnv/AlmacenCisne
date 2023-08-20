@@ -1,7 +1,7 @@
 import sys
 from PyQt5 import QtWidgets, uic
 from Modelo.FrmMenu import VentanaPrincipal
-from Modelo.FrmNuevo import Nuevo
+from Modelo.FrmNuevo import nuevo
 from Controller.EmpleadoController import *
 
 
@@ -45,7 +45,7 @@ class FormularioLogin(QtWidgets.QMainWindow):
             QtWidgets.QMessageBox.Ok)                 
         
     def nuevoRegistro(self):
-        vClientes= Nuevo(self)
+        vClientes= nuevo(self)
         vClientes.show() 
                 
     def cerrar_ventana(self):
