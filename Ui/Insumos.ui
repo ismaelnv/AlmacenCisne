@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>720</width>
-    <height>525</height>
+    <height>703</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,14 +19,14 @@
      <rect>
       <x>330</x>
       <y>30</y>
-      <width>111</width>
+      <width>131</width>
       <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>20</pointsize>
+      <pointsize>31</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -47,7 +47,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>14</pointsize>
+      <pointsize>17</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -68,7 +68,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>14</pointsize>
+      <pointsize>17</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -89,7 +89,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>14</pointsize>
+      <pointsize>17</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -110,7 +110,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>14</pointsize>
+      <pointsize>17</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -131,7 +131,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>14</pointsize>
+      <pointsize>17</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -152,7 +152,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>14</pointsize>
+      <pointsize>17</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -173,7 +173,7 @@
     <property name="font">
      <font>
       <family>Agency FB</family>
-      <pointsize>14</pointsize>
+      <pointsize>17</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -210,7 +210,7 @@
      </item>
     </widget>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="btnRegistrar">
     <property name="geometry">
      <rect>
       <x>44</x>
@@ -227,14 +227,24 @@
       <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {	
+	background-color: rgb(251, 235, 220);
+}
+QPushButton:hover{	
+	background-color: rgb(235, 208, 180);
+	color: rgb(255, 255, 255);
+}
+</string>
+    </property>
     <property name="text">
      <string>Registrar</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="btnModificar">
     <property name="geometry">
      <rect>
-      <x>194</x>
+      <x>180</x>
       <y>380</y>
       <width>121</width>
       <height>31</height>
@@ -247,15 +257,25 @@
       <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {	
+	background-color: rgb(251, 235, 220);
+}
+QPushButton:hover{	
+	background-color: rgb(235, 208, 180);
+	color: rgb(255, 255, 255);
+}
+</string>
     </property>
     <property name="text">
      <string>Modificar</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="btnBorrar">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>440</x>
       <y>380</y>
       <width>121</width>
       <height>31</height>
@@ -269,29 +289,18 @@
       <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {	
+	background-color: rgb(251, 235, 220);
+}
+QPushButton:hover{	
+	background-color: rgb(235, 208, 180);
+	color: rgb(255, 255, 255);
+}
+</string>
+    </property>
     <property name="text">
      <string>Borrar</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_4">
-    <property name="geometry">
-     <rect>
-      <x>530</x>
-      <y>380</y>
-      <width>131</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Agency FB</family>
-      <pointsize>12</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Ir a  Principal</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit">
@@ -369,7 +378,7 @@
    <widget class="QLineEdit" name="lineEdit_5">
     <property name="geometry">
      <rect>
-      <x>490</x>
+      <x>510</x>
       <y>280</y>
       <width>113</width>
       <height>20</height>
@@ -408,17 +417,126 @@
       <x>0</x>
       <y>-30</y>
       <width>721</width>
-      <height>581</height>
+      <height>711</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>Imagen2.jpg</pixmap>
+     <pixmap>../Img/Imagen2.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tbDatos">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>430</y>
+      <width>701</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>New Column</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Id Insumo</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Nombre</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Precio</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Stock</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Existencia</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Id Categoria</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="btnSalir">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>380</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {	
+
+	background-color: rgb(251, 235, 220);
+}
+QPushButton:hover{	
+	background-color: rgb(235, 208, 180);
+	color: rgb(255, 0, 0);
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Salir</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnConsultar">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>380</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {	
+	background-color: rgb(251, 235, 220);
+}
+QPushButton:hover{	
+	background-color: rgb(235, 208, 180);
+	color: rgb(255, 255, 255);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Consultar</string>
     </property>
    </widget>
    <zorder>label_8</zorder>
@@ -430,16 +548,18 @@
    <zorder>label_6</zorder>
    <zorder>label_7</zorder>
    <zorder>groupBox</zorder>
-   <zorder>pushButton</zorder>
-   <zorder>pushButton_2</zorder>
-   <zorder>pushButton_3</zorder>
-   <zorder>pushButton_4</zorder>
+   <zorder>btnRegistrar</zorder>
+   <zorder>btnModificar</zorder>
+   <zorder>btnBorrar</zorder>
    <zorder>lineEdit</zorder>
    <zorder>lineEdit_2</zorder>
    <zorder>lineEdit_3</zorder>
    <zorder>lineEdit_4</zorder>
    <zorder>lineEdit_5</zorder>
    <zorder>lineEdit_6</zorder>
+   <zorder>tbDatos</zorder>
+   <zorder>btnSalir</zorder>
+   <zorder>btnConsultar</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

@@ -19,14 +19,14 @@
      <rect>
       <x>280</x>
       <y>10</y>
-      <width>141</width>
+      <width>191</width>
       <height>61</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Bell MT</family>
-      <pointsize>26</pointsize>
+      <pointsize>38</pointsize>
       <weight>50</weight>
       <bold>false</bold>
      </font>
@@ -42,17 +42,17 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>110</y>
-      <width>111</width>
+      <y>160</y>
+      <width>281</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Agency FB</family>
-      <pointsize>14</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
+      <family>Bell MT</family>
+      <pointsize>15</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -62,52 +62,21 @@
      <string>NUESTRA IDENTIDAD</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>170</y>
-      <width>311</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Agency FB</family>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Agency FB'; font-size:10pt; font-weight:600; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Nosotros ofrecemos a nuestros clientes una variedad de &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;productos, estableciendo altos estándares para&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; quienes buscan productos confiables y de &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;calidad.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>140</y>
-      <width>131</width>
+      <y>190</y>
+      <width>201</width>
       <height>21</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Agency FB</family>
-      <pointsize>12</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
+      <family>Bell MT</family>
+      <pointsize>17</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -117,7 +86,7 @@ p, li { white-space: pre-wrap; }
      <string>Detrás de la Marca</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="btnInsumos">
     <property name="geometry">
      <rect>
       <x>490</x>
@@ -135,13 +104,19 @@ p, li { white-space: pre-wrap; }
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(200, 184, 155);</string>
+     <string notr="true">QPushButton {
+    background-color: rgb(225, 206, 189);
+}
+QPushButton:hover{
+    background-color: rgb(162, 136, 123);
+	color: rgb(255, 255, 255);
+}</string>
     </property>
     <property name="text">
      <string>Registro de Insumos</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="btnCerrar">
     <property name="geometry">
      <rect>
       <x>490</x>
@@ -159,10 +134,16 @@ p, li { white-space: pre-wrap; }
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(200, 184, 155);</string>
+     <string notr="true">QPushButton {
+    background-color: rgb(225, 206, 189);
+}
+QPushButton:hover{
+    background-color: rgb(162, 136, 123);
+	color: rgb(255, 255, 255);
+}</string>
     </property>
     <property name="text">
-     <string>Cerrar sesion</string>
+     <string>Cerrar Sesion</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
@@ -187,13 +168,87 @@ p, li { white-space: pre-wrap; }
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="QLabel" name="lblMostrarfecha">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>440</y>
+      <width>321</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>381</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bell MT</family>
+      <pointsize>21</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Bienvenido al Menu Princiapal</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>220</y>
+      <width>421</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bell MT</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Nosotros ofrecemos a nuestros clientes una variedad de 
+productos, estableciendo altos estándares para
+ quienes buscan productos confiables y de 
+calidad.</string>
+    </property>
+   </widget>
    <zorder>label_5</zorder>
    <zorder>label</zorder>
    <zorder>label_2</zorder>
-   <zorder>label_3</zorder>
    <zorder>label_4</zorder>
-   <zorder>pushButton</zorder>
-   <zorder>pushButton_2</zorder>
+   <zorder>btnInsumos</zorder>
+   <zorder>btnCerrar</zorder>
+   <zorder>lblMostrarfecha</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_3</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

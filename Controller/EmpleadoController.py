@@ -18,7 +18,7 @@ class EmpleadoController():
         sql = "SELECT * FROM empleado WHERE CorreoEmp = '{}'".format(correo)
         self.miCursor.execute(sql)
         correox = self.miCursor.fetchall()
-        self.miCursor.close()
+        #self.miCursor.close()
         return correox
     
     
