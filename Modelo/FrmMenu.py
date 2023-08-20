@@ -4,6 +4,9 @@ from Modelo.FrmInsumos import Insumos
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel
 from PyQt5.QtCore import QDateTime, QTimer
 
+
+
+
 class VentanaPrincipal(QtWidgets.QMainWindow):
     
     def __init__(self,parent=None):

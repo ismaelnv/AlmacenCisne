@@ -240,6 +240,19 @@ productos, estableciendo altos estándares para
 calidad.</string>
     </property>
    </widget>
+   <widget class="QLabel" name="lblVideo">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>120</y>
+      <width>241</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
    <zorder>label_5</zorder>
    <zorder>label</zorder>
    <zorder>label_2</zorder>
@@ -249,6 +262,7 @@ calidad.</string>
    <zorder>lblMostrarfecha</zorder>
    <zorder>label_6</zorder>
    <zorder>label_3</zorder>
+   <zorder>lblVideo</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
