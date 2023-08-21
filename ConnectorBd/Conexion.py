@@ -5,8 +5,8 @@ from Entity.Insumo import *
 
 class Registro_datos():
     try:
-        conexion = mysql.connector.connect(user = 'root', password = '12345678',
-        host = 'localhost',database = 'el_cisne'
+        conexion = mysql.connector.connect(user = 'root', password = '123456',
+        host = 'localhost',database = 'bdalmacencisne'
         ,port = '3306')
         miCursor = conexion.cursor()
     except Error as ex: 

@@ -308,7 +308,7 @@ QPushButton:hover{
      <string>Borrar</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="txtIdusuario">
+   <widget class="QLineEdit" name="txtId">
     <property name="geometry">
      <rect>
       <x>210</x>
@@ -556,7 +556,7 @@ QPushButton:hover{
    <zorder>btnRegistrar</zorder>
    <zorder>btnModificar</zorder>
    <zorder>btnBorrar</zorder>
-   <zorder>txtIdusuario</zorder>
+   <zorder>txtId</zorder>
    <zorder>txtNombre</zorder>
    <zorder>txtPrecio</zorder>
    <zorder>txtStock</zorder>

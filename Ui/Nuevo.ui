@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>494</width>
-    <height>600</height>
+    <width>513</width>
+    <height>597</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <widget class="QLineEdit" name="txtIdEmpleado">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>240</x>
       <y>160</y>
       <width>181</width>
       <height>20</height>
@@ -27,7 +27,7 @@
    <widget class="QLineEdit" name="txtNombre">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>240</x>
       <y>200</y>
       <width>181</width>
       <height>20</height>
@@ -37,7 +37,7 @@
    <widget class="QLineEdit" name="txtApellidoPaterno">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>240</x>
       <y>240</y>
       <width>181</width>
       <height>20</height>
@@ -47,9 +47,9 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>60</x>
       <y>160</y>
-      <width>121</width>
+      <width>131</width>
       <height>21</height>
      </rect>
     </property>
@@ -75,8 +75,8 @@
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>-40</x>
-      <y>-30</y>
+      <x>-30</x>
+      <y>-20</y>
       <width>551</width>
       <height>621</height>
      </rect>
@@ -94,9 +94,9 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>60</x>
       <y>200</y>
-      <width>121</width>
+      <width>131</width>
       <height>21</height>
      </rect>
     </property>
@@ -122,9 +122,9 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>60</x>
       <y>400</y>
-      <width>121</width>
+      <width>131</width>
       <height>21</height>
      </rect>
     </property>
@@ -150,9 +150,9 @@
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>60</x>
       <y>360</y>
-      <width>121</width>
+      <width>131</width>
       <height>21</height>
      </rect>
     </property>
@@ -178,9 +178,9 @@
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>60</x>
       <y>320</y>
-      <width>121</width>
+      <width>131</width>
       <height>21</height>
      </rect>
     </property>
@@ -206,13 +206,9 @@
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>60</x>
       <y>280</y>
-<<<<<<< HEAD
-      <width>101</width>
-=======
       <width>151</width>
->>>>>>> f8995e5a0dcf8aa52e79bc52a0c518c36c518673
       <height>21</height>
      </rect>
     </property>
@@ -238,13 +234,9 @@
    <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>60</x>
       <y>240</y>
-<<<<<<< HEAD
-      <width>101</width>
-=======
-      <width>161</width>
->>>>>>> f8995e5a0dcf8aa52e79bc52a0c518c36c518673
+      <width>141</width>
       <height>21</height>
      </rect>
     </property>
@@ -270,7 +262,7 @@
    <widget class="QLineEdit" name="txtApellidoMaterno">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>240</x>
       <y>280</y>
       <width>181</width>
       <height>20</height>
@@ -280,7 +272,7 @@
    <widget class="QLineEdit" name="txtDni">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>240</x>
       <y>320</y>
       <width>181</width>
       <height>20</height>
@@ -290,7 +282,7 @@
    <widget class="QLineEdit" name="txtCorreo">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>240</x>
       <y>360</y>
       <width>181</width>
       <height>20</height>
@@ -300,7 +292,7 @@
    <widget class="QLineEdit" name="txtIdCargo">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>240</x>
       <y>400</y>
       <width>181</width>
       <height>20</height>
@@ -345,24 +337,18 @@
     </property>
     <property name="font">
      <font>
-      <family>Brush Script MT</family>
-      <pointsize>21</pointsize>
-      <weight>50</weight>
-      <italic>true</italic>
-      <bold>false</bold>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">
-QPushButton {
-   
-	background-color: rgb(87, 162, 168);
+     <string notr="true">QPushButton {
+	background-color: rgb(15, 171, 184);
    color: rgb(255, 255, 255);
 }
-QPushButton:hover{
-	
-	
-	background-color: rgb(104, 254, 253);
+QPushButton:hover{	
+	background-color: rgb(14, 212, 212);
 	color: rgb(0, 0, 0);
 }</string>
     </property>
@@ -381,24 +367,18 @@ QPushButton:hover{
     </property>
     <property name="font">
      <font>
-      <family>Brush Script MT</family>
-      <pointsize>20</pointsize>
-      <weight>50</weight>
-      <italic>true</italic>
-      <bold>false</bold>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">
-QPushButton {
-   
-	background-color: rgb(87, 162, 168);
+     <string notr="true">QPushButton {
+	background-color: rgb(15, 171, 184);
    color: rgb(255, 255, 255);
 }
-QPushButton:hover{
-	
-	
-	background-color: rgb(104, 254, 253);
+QPushButton:hover{	
+	background-color: rgb(14, 212, 212);
 	color: rgb(0, 0, 0);
 }</string>
     </property>
@@ -424,16 +404,6 @@ QPushButton:hover{
    <zorder>label_10</zorder>
    <zorder>btnCerrar</zorder>
    <zorder>btnRegistrar</zorder>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>494</width>
-     <height>21</height>
-    </rect>
-   </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>

@@ -27,7 +27,7 @@ class EmpleadoController():
         empleado.getApellidoMaterno(),empleado.getDniEmpleado(),empleado.getCorreoEmpleado(),empleado.getIdCargo())
         self.miCursor.execute(sql)
         self.conexion.commit()
-        self.miCursor.close()
+        #self.miCursor.close()
     
     
             
