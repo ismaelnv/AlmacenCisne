@@ -60,7 +60,7 @@
     <property name="geometry">
      <rect>
       <x>90</x>
-      <y>160</y>
+      <y>170</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -81,7 +81,7 @@
     <property name="geometry">
      <rect>
       <x>90</x>
-      <y>200</y>
+      <y>220</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -102,7 +102,7 @@
     <property name="geometry">
      <rect>
       <x>90</x>
-      <y>240</y>
+      <y>270</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -119,32 +119,11 @@
      <string>Stock</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_6">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>280</y>
-      <width>81</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Agency FB</family>
-      <pointsize>17</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Existencia</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
       <x>390</x>
-      <y>270</y>
+      <y>260</y>
       <width>101</width>
       <height>31</height>
      </rect>
@@ -330,7 +309,7 @@ QPushButton:hover{
     <property name="geometry">
      <rect>
       <x>210</x>
-      <y>160</y>
+      <y>170</y>
       <width>113</width>
       <height>20</height>
      </rect>
@@ -348,7 +327,7 @@ QPushButton:hover{
     <property name="geometry">
      <rect>
       <x>210</x>
-      <y>200</y>
+      <y>220</y>
       <width>113</width>
       <height>20</height>
      </rect>
@@ -366,7 +345,7 @@ QPushButton:hover{
     <property name="geometry">
      <rect>
       <x>210</x>
-      <y>240</y>
+      <y>270</y>
       <width>113</width>
       <height>20</height>
      </rect>
@@ -384,25 +363,7 @@ QPushButton:hover{
     <property name="geometry">
      <rect>
       <x>510</x>
-      <y>280</y>
-      <width>113</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Agency FB</family>
-      <pointsize>14</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="txtExistencia">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>280</y>
+      <y>270</y>
       <width>113</width>
       <height>20</height>
      </rect>
@@ -550,7 +511,6 @@ QPushButton:hover{
    <zorder>label_3</zorder>
    <zorder>label_4</zorder>
    <zorder>label_5</zorder>
-   <zorder>label_6</zorder>
    <zorder>label_7</zorder>
    <zorder>groupBox</zorder>
    <zorder>btnRegistrar</zorder>
@@ -561,7 +521,6 @@ QPushButton:hover{
    <zorder>txtPrecio</zorder>
    <zorder>txtStock</zorder>
    <zorder>txtIdcategoria</zorder>
-   <zorder>txtExistencia</zorder>
    <zorder>tbDatos</zorder>
    <zorder>btnSalir</zorder>
    <zorder>btnConsultar</zorder>
