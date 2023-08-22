@@ -9,7 +9,7 @@ class Registro_datos():
         host = 'localhost',database = 'bdalmacencisne'
         ,port = '3306')
         miCursor = conexion.cursor()
-    except Error as ex: 
+    except Error as ex:  
         print("Error al intentar conexión".format(ex)) 
         
         
