@@ -4,23 +4,17 @@ from Modelo.FrmInsumos import Insumos
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel
 from PyQt5.QtCore import QDateTime, QTimer
 
-
-
-
 class VentanaPrincipal(QtWidgets.QMainWindow):
     
     def __init__(self,parent=None):
         super(VentanaPrincipal, self).__init__(parent)
         uic.loadUi("Ui/Menu.ui",self)
-        
         self.label = QLabel(self)
         self.label.setGeometry(50, 50, 300, 50)
         self.verFechayhora()
         self.timer = QTimer(self)
         self.timer.timeout.connect(self.verFechayhora)
         self.timer.start(1000)
-        
-        
         self.btnInsumos.clicked.connect(self.abrirInsumos)
         self.btnCerrar.clicked.connect(self.cerrarSesion)
     

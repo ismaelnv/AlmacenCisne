@@ -32,7 +32,6 @@ class FormularioLogin(QtWidgets.QMainWindow):
         else:
             return "El usuario No esta registrado"
            
-    
     def iniciarSesion(self): 
         usuario =self.txtUsuario.text()
         correo =self.txtPassword.text()

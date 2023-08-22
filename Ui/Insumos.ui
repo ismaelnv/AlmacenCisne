@@ -119,27 +119,6 @@
      <string>Stock</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_6">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>280</y>
-      <width>81</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Agency FB</family>
-      <pointsize>17</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Existencia</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
@@ -398,24 +377,6 @@ QPushButton:hover{
      </font>
     </property>
    </widget>
-   <widget class="QLineEdit" name="txtExistencia">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>280</y>
-      <width>113</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Agency FB</family>
-      <pointsize>14</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
@@ -444,11 +405,6 @@ QPushButton:hover{
       <height>192</height>
      </rect>
     </property>
-    <column>
-     <property name="text">
-      <string>New Column</string>
-     </property>
-    </column>
     <column>
      <property name="text">
       <string>Id Insumo</string>
@@ -550,7 +506,6 @@ QPushButton:hover{
    <zorder>label_3</zorder>
    <zorder>label_4</zorder>
    <zorder>label_5</zorder>
-   <zorder>label_6</zorder>
    <zorder>label_7</zorder>
    <zorder>groupBox</zorder>
    <zorder>btnRegistrar</zorder>
@@ -561,7 +516,6 @@ QPushButton:hover{
    <zorder>txtPrecio</zorder>
    <zorder>txtStock</zorder>
    <zorder>txtIdcategoria</zorder>
-   <zorder>txtExistencia</zorder>
    <zorder>tbDatos</zorder>
    <zorder>btnSalir</zorder>
    <zorder>btnConsultar</zorder>

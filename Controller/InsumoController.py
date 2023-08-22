@@ -5,12 +5,10 @@ from Entity.Insumo import *
 class InsumoContoller():
     
     def __init__(self):
-        
         bd = Registro_datos()
         self.conexion = bd.conexion
         self.miCursor =  bd.miCursor
         insumo = Insumo
-    
     
     def inserta_insumos(self,insumo):
         sql = '''INSERT INTO insumos(idInsumos,NombreIns,PrecioIns,StockIns,EstadoIns,idCategoria)
@@ -18,7 +16,7 @@ class InsumoContoller():
         insumo.getStockInsumo(),insumo.getEstado(),insumo.getIdCategoria())
         self.miCursor.execute(sql)
         self.conexion.commit()
-        self.miCursor.close()
+        #self.miCursor.close()
        
     def traer_insumos(self):
         sql = "SELECT * FROM insumos"
@@ -26,18 +24,23 @@ class InsumoContoller():
         registroInsumo = self.miCursor.fetchall()
         return registroInsumo  
     
-    def buscar_insumos(self,nombre):
-        sql = "SELECT * FROM insumos WHERE NombreIns = '{}'".format(nombre)
+    def buscar_insumos(self,id):
+        sql = "SELECT * FROM insumos WHERE idInsumos = '{}'".format(id)
         self.miCursor.execute(sql)
         nombreX = self.miCursor.fetchall()
-        self.miCursor.close()
+        #self.miCursor.close()
         return nombreX
     
-    def eliminar_insumos(self,nombre):
-        sql ="DELETE FROM insumos WHERE NombreIns = '{}'".format(nombre)
+    def eliminar_insumos(self,id):
+        sql ="DELETE FROM insumos WHERE idInsumos = '{}'".format(id)
         self.miCursor.execute(sql)
         self.conexion.commit()
-        self.miCursor.close()
+        #self.miCursor.close()
+        
+    def ObtenerTamaño(self):
+        sql = "SHOW TABLE STATUS LIKE insumos"
+        self.miCursor.execute(sql)
+        self.conexion.commit()    
         
      #def ingreso_usuario(self,usuario,contraseña):
         #sql = "SELECT * FROM empleado WHERE idEmpleado '{}'".format(usuario)   
