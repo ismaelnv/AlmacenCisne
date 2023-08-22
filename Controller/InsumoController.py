@@ -19,7 +19,7 @@ class InsumoContoller():
         self.miCursor.execute(sql)
         self.conexion.commit()
         self.miCursor.close()
-        
+       
     def traer_insumos(self):
         sql = "SELECT * FROM insumos"
         self.miCursor.execute(sql)
