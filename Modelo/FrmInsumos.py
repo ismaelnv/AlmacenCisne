@@ -13,6 +13,7 @@ class Insumos(QtWidgets.QMainWindow):
         self.btnRegistrar.clicked.connect(self.registrarInsumo)
         self.btnBorrar.clicked.connect(self.eliminarInsumo)
         self.btnConsultar.clicked.connect(self.consultarInsumo)
+        self.btnModificar.clicked.connect(self.modificar)
        
              
     def Salir(self):
@@ -20,14 +21,14 @@ class Insumos(QtWidgets.QMainWindow):
         
     def registrarInsumo(self):
         self.cInsumo.inserta_insumos(self.traerDatos())
-        #self.listar(self.listarDatos())
+       # self.listar(self.listarDatos())
         
     def consultarInsumo(self):
         obInsumo = self.cInsumo.buscar_insumos(self.traerId())
         self.cargarInsumo(obInsumo)
         
-    def modificar():
-        pass
+    def modificar(self):
+        self.cInsumo.actualizarInsumo(self.traerDatos(),self.traerId())
     
     def eliminarInsumo(self):
         self.cInsumo.eliminar_insumos(self.traerId())
@@ -70,16 +71,16 @@ class Insumos(QtWidgets.QMainWindow):
                 
     #Falta terminar metodo que carga las tablas
     #def listar(self,insumoList):
-        #self.tbDatos.setRowCount(self.cInsumo.ObtenerTamaño())
+        #self.tbDatos.setRowCount(50)
         #for indice, ancho in enumerate((130,70,70,70,70,70,70)):
-            #self.tbDatos.setColumnWidth(indice,ancho)
-       # for i in range(len(self):   
-           # self.tbDatos.setItem(i,0, QtWidgets.QTableWidgetItem(str(insumoList [i][0]))) 
-           # self.tbDatos.setItem(i,1, QtWidgets.QTableWidgetItem(str(insumoList [i][1])))      
-           # self.tbDatos.setItem(i,2, QtWidgets.QTableWidgetItem(str(insumoList [i][2]))) 
-           # self.tbDatos.setItem(i,3, QtWidgets.QTableWidgetItem(str(insumoList [i][3])))
-            #self.tbDatos.setItem(i,4, QtWidgets.QTableWidgetItem(str(insumoList [i][4])))
-            #self.tbDatos.setItem(i,5, QtWidgets.QTableWidgetItem(str(insumoList [i][5])))  
+           # self.tbDatos.setColumnWidth(indice,ancho)
+       # for i in range(len(insumoList)):   
+           #self.tbDatos.setItem(i,0, QtWidgets.QTableWidgetItem(str(insumoList [i][0]))) 
+           #self.tbDatos.setItem(i,1, QtWidgets.QTableWidgetItem(str(insumoList [i][1])))      
+           #self.tbDatos.setItem(i,2, QtWidgets.QTableWidgetItem(str(insumoList [i][2]))) 
+           #self.tbDatos.setItem(i,3, QtWidgets.QTableWidgetItem(str(insumoList [i][3])))
+           #self.tbDatos.setItem(i,4, QtWidgets.QTableWidgetItem(str(insumoList [i][4])))
+           #self.tbDatos.setItem(i,5, QtWidgets.QTableWidgetItem(str(insumoList [i][5])))  
     
     def listarDatos (self):
         
@@ -87,7 +88,6 @@ class Insumos(QtWidgets.QMainWindow):
         nombre = str(self.txtNombre.text()) 
         precio =  str(self.txtPrecio.text())
         stock =  str(self.txtStock.text())
-        existencia = str(self.txtExistencia.text())
         categoria = str(self.txtIdcategoria.text())
         estado = str(self.cboEstado.currentText())
         insumolist = (id,nombre,precio,stock,estado,categoria)

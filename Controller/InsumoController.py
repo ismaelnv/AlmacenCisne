@@ -1,6 +1,7 @@
 
 from ConnectorBd.Conexion import *
 from Entity.Insumo import *
+from PyQt5 import QtWidgets, uic
 
 class InsumoContoller():
     
@@ -11,42 +12,59 @@ class InsumoContoller():
         insumo = Insumo
     
     def inserta_insumos(self,insumo):
+        
         sql = '''INSERT INTO insumos(idInsumos,NombreIns,PrecioIns,StockIns,EstadoIns,idCategoria)
         VALUES('{}','{}','{}','{}','{}','{}')'''.format(insumo.getIdInsumo(),insumo.getNombre(),insumo.getPrecioInsumo(),
         insumo.getStockInsumo(),insumo.getEstado(),insumo.getIdCategoria())
-        self.miCursor.execute(sql)
-        self.conexion.commit()
-        #self.miCursor.close()
+        try:
+            self.miCursor.execute(sql)
+            self.conexion.commit()
+            QtWidgets.QMessageBox.information(None, "Registro Exitoso", "El insumo ha sido registrado exitosamente.")
+        except Error:
+            QtWidgets.QMessageBox.warning(None, "Tipo de dato no valido", "ERROR...!!!")   
        
     def traer_insumos(self):
         sql = "SELECT * FROM insumos"
         self.miCursor.execute(sql)
         registroInsumo = self.miCursor.fetchall()
-        return registroInsumo  
+            
+        return registroInsumo 
     
     def buscar_insumos(self,id):
+        
         sql = "SELECT * FROM insumos WHERE idInsumos = '{}'".format(id)
-        self.miCursor.execute(sql)
-        nombreX = self.miCursor.fetchall()
-        #self.miCursor.close()
-        return nombreX
-    
+        try:
+            self.miCursor.execute(sql)
+            nombreX = self.miCursor.fetchall()
+            return nombreX
+        except Error:
+            QtWidgets.QMessageBox.warning(None, "ERROR...!!!", "Insumo no encontrado")
+            
     def eliminar_insumos(self,id):
         sql ="DELETE FROM insumos WHERE idInsumos = '{}'".format(id)
-        self.miCursor.execute(sql)
-        self.conexion.commit()
-        #self.miCursor.close()
+        try:
+            self.miCursor.execute(sql)
+            self.conexion.commit()
+            QtWidgets.QMessageBox.information(None, ":v", "Insumo eliminado")
+        except Error:
+            QtWidgets.QMessageBox.warning(None, "Error", "ERROR...!!!")    
         
     def ObtenerTamaño(self):
         sql = "SHOW TABLE STATUS LIKE insumos"
         self.miCursor.execute(sql)
         self.conexion.commit()    
         
-     #def ingreso_usuario(self,usuario,contraseña):
-        #sql = "SELECT * FROM empleado WHERE idEmpleado '{}'".format(usuario)   
-        #sql1 = "SELECT * FROM empleado WHERE CorreoEmp '{}'".format(contraseña)
-        #self.miCursor.execute(sql,sql1)
-        #self.miCursor.close()
+    def actualizarInsumo(self,insumo,id):
+        sql = """
+        UPDATE insumos SET idInsumos = '{}', NombreIns = '{}', PrecioIns = '{}', StockIns = '{}', EstadoIns = '{}', idCategoria = '{}'
+        WHERE idInsumos = '{}'
+        """.format(insumo.getIdInsumo(),insumo.getNombre(), insumo.getPrecioInsumo(), insumo.getStockInsumo(), insumo.getEstado(), insumo.getIdCategoria(), id)
+        try:
+            self.miCursor.execute(sql)
+            self.conexion.commit()
+            QtWidgets.QMessageBox.information(None, "Se", "El insumo fue actualizado correctamente")
+        except Error:
+            QtWidgets.QMessageBox.warning(None, "ERROR", "No se logro actualizar verifique los campos")    
          
             
         

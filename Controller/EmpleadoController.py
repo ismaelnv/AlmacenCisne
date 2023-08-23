@@ -18,7 +18,6 @@ class EmpleadoController():
         sql = "SELECT * FROM empleado WHERE CorreoEmp = '{}'".format(correo)
         self.miCursor.execute(sql)
         correox = self.miCursor.fetchall()
-        #self.miCursor.close()
         return correox
     
     def inserta_empleados(self,empleado):
@@ -27,7 +26,7 @@ class EmpleadoController():
         empleado.getApellidoMaterno(),empleado.getDniEmpleado(),empleado.getCorreoEmpleado(),empleado.getIdCargo())
         self.miCursor.execute(sql)
         self.conexion.commit()
-        #self.miCursor.close()
+        
     
     
             
